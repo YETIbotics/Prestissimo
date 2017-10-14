@@ -130,10 +130,10 @@ if (Xbox.getAnalogHat(RightHatY) > 7500) {
 */
     
     //write to motor controllers
-    mc.setMotorSpeed(0, DriveLeftSpeed * -1);
-    mc.setMotorSpeed(1, DriveRightSpeed);
-    mc.setMotorSpeed(2, RollerSpeed);
-    mc.setMotorSpeed(3, RollerSpeed);
+    mc.setMotorSpeed(2, DriveLeftSpeed * -1);
+    mc.setMotorSpeed(3, DriveRightSpeed);
+    mc.setMotorSpeed(0, RollerSpeed);
+    mc.setMotorSpeed(1, RollerSpeed);
   }
 
   delay(1);
