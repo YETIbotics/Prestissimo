@@ -106,6 +106,13 @@ void loop()
 			speedDiv = speedDiv + .1;
 	}
 
+	if (Xbox.getButtonPress(R2, curController) > 10) {
+		RollerSpeed = Xbox.getButtonPress(R2, curController);
+	}
+	else {
+		RollerSpeed = -1 * Xbox.getButtonPress(L2, curController);
+	}
+
 	//CONTROLLER 2
 	curController = 1;
 
@@ -113,12 +120,8 @@ void loop()
 	int servoNeut = 1500 * 4;
 	int servoMax = 2500 * 4;
 
-	if (Xbox.getButtonPress(R2, curController) > 10) {
-		RollerSpeed = Xbox.getButtonPress(R2, curController);
-	}
-	else {
-		RollerSpeed = -1 * Xbox.getButtonPress(L2, curController);
-	}
+	ChainbarX = servoNeut;
+	ChainbarY = servoNeut;
 
 	if (Xbox.getButtonClick(Y, curController))
 	{
@@ -141,6 +144,13 @@ void loop()
 		else if (Xbox.getAnalogHat(RightHatY, curController) < -7500)
 		{
 			ChainbarX = map(Xbox.getAnalogHat(RightHatY, curController), -32767, -7500, servoMin, servoNeut);
+		}
+
+		if (Xbox.getButtonPress(R2, curController) > 10) {
+			ChainbarX = map(Xbox.getButtonPress(R2, curController), 10, 255, servoNeut, servoMax);
+		}
+		else if (Xbox.getButtonPress(L2, curController) > 10) {
+			ChainbarX = map(Xbox.getButtonPress(L2, curController), 10, 255, servoNeut, servoMin);
 		}
 	}
 	else
