@@ -50,6 +50,7 @@ void loop()
 	float RollerSpeed = 0;
 	float ChainbarX = 0;
 	float ChainbarY = 0;
+	bool AtanMode = false;
 
 
 	int curController = 0;
@@ -119,20 +120,43 @@ void loop()
 		RollerSpeed = -1 * Xbox.getButtonPress(L2, curController);
 	}
 
-	if (Xbox.getAnalogHat(LeftHatY, curController) > 7500) {
-		ChainbarY = map(Xbox.getAnalogHat(LeftHatY, curController), 7500, 32767, servoNeut, servoMax);
-	}
-	else if (Xbox.getAnalogHat(LeftHatY, curController) < -7500)
+	if (Xbox.getButtonClick(Y, curController))
 	{
-		ChainbarY = map(Xbox.getAnalogHat(LeftHatY, curController), -32767, -7500, servoMin, servoNeut);
+		AtanMode = !AtanMode;
 	}
 
-	if (Xbox.getAnalogHat(RightHatY, curController) > 7500) {
-		ChainbarX = map(Xbox.getAnalogHat(RightHatY, curController), 7500, 32767, servoNeut, servoMax);
-	}
-	else if (Xbox.getAnalogHat(RightHatY, curController) < -7500)
+	if (!AtanMode)
 	{
-		ChainbarX = map(Xbox.getAnalogHat(RightHatY, curController), -32767, -7500, servoMin, servoNeut);
+		if (Xbox.getAnalogHat(LeftHatY, curController) > 7500) {
+			ChainbarY = map(Xbox.getAnalogHat(LeftHatY, curController), 7500, 32767, servoNeut, servoMax);
+		}
+		else if (Xbox.getAnalogHat(LeftHatY, curController) < -7500)
+		{
+			ChainbarY = map(Xbox.getAnalogHat(LeftHatY, curController), -32767, -7500, servoMin, servoNeut);
+		}
+
+		if (Xbox.getAnalogHat(RightHatY, curController) > 7500) {
+			ChainbarX = map(Xbox.getAnalogHat(RightHatY, curController), 7500, 32767, servoNeut, servoMax);
+		}
+		else if (Xbox.getAnalogHat(RightHatY, curController) < -7500)
+		{
+			ChainbarX = map(Xbox.getAnalogHat(RightHatY, curController), -32767, -7500, servoMin, servoNeut);
+		}
+	}
+	else
+	{
+		double posX = 0;
+		double posY = 0;
+
+		if (Xbox.getAnalogHat(RightHatY, curController) > 7500)
+			posY = Xbox.getAnalogHat(RightHatY, curController);
+
+		if (Xbox.getAnalogHat(RightHatX, curController) > 7500)
+			posX = Xbox.getAnalogHat(RightHatX, curController);
+
+		//Find Degrees for ChainBarY
+		
+
 	}
 
 
