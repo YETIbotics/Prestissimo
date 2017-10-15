@@ -1,0 +1,273 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Prestissimo.ino" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="__vm\.Prestissimo.vsarduino.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="address.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="adk.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="avrpins.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BTD.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BTHID.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cdcacm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cdcftdi.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cdcprolific.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cdc_XR21B1411.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="confdescparser.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="controllerEnums.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="hexdump.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="hidboot.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="hidcomposite.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="hidescriptorparser.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="hiduniversal.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="hidusagestr.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="macros.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="masstorage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="max3421e.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="max_LCD.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MDD10A.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="message.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="parsetools.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PololuMaestro.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="printhex.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PS3BT.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PS3Enums.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PS3USB.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PS4BT.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PS4Parser.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PS4USB.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PSBuzz.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="settings.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="sink_parser.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SPP.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Usb.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UsbCore.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="usbhid.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="usbhost.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="usbhub.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="usbh_midi.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="usb_ch9.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="version_helper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Wii.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="xboxEnums.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="XBOXOLD.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="XBOXONE.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="XBOXRECV.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="XBOXUSB.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="adk.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BTD.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BTHID.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="cdcacm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="cdcftdi.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="cdcprolific.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="cdc_XR21B1411.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="hidboot.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="hidcomposite.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="hidescriptorparser.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="hiduniversal.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="hidusagetitlearrays.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="masstorage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="max_LCD.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MDD10A.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="message.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="parsetools.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PololuMaestro.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PS3BT.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PS3USB.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PS4Parser.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PSBuzz.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SPP.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Usb.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="usbhid.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="usbhub.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="usbh_midi.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Wii.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="XBOXOLD.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="XBOXONE.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="XBOXRECV.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="XBOXUSB.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

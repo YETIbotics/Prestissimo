@@ -1,0 +1,275 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{C5F80730-F44F-4478-BDAE-6634EFC2CA88}</ProjectGuid>
+    <RootNamespace>
+    </RootNamespace>
+    <ProjectName>Prestissimo</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>
+    </PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>
+    </PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\Prestissimo;$(ProjectDir)..\..\..\Program Files (x86)\Arduino\libraries;$(ProjectDir)..\..\..\Program Files (x86)\Arduino\hardware\arduino\avr\libraries;$(ProjectDir)..\..\..\Users\Jeremy\Documents\Arduino\libraries;$(ProjectDir)..\..\..\Program Files (x86)\Arduino\hardware\arduino\avr\cores\arduino;$(ProjectDir)..\..\..\Program Files (x86)\Arduino\hardware\arduino\avr\variants\mega;$(ProjectDir)..\..\..\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\;$(ProjectDir)..\..\..\Program Files (x86)\Arduino\hardware\tools\avr\avr\include\avr\;$(ProjectDir)..\..\..\Program Files (x86)\Arduino\hardware\tools\avr\lib\gcc\avr\4.8.1\include;$(ProjectDir)..\..\..\Program Files (x86)\Arduino\hardware\tools\avr\lib\gcc\avr\4.9.2\include;$(ProjectDir)..\..\..\Program Files (x86)\Arduino\hardware\tools\avr\lib\gcc\avr\4.9.3\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>$(ProjectDir)__vm\.Prestissimo.vsarduino.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <IgnoreStandardIncludePath>false</IgnoreStandardIncludePath>
+      <PreprocessorDefinitions>__AVR_ATmega2560__;F_CPU=16000000L;ARDUINO=10803;ARDUINO_AVR_ADK;ARDUINO_ARCH_AVR;__cplusplus=201103L;_VMICRO_INTELLISENSE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ProjectCapability Include="VisualMicro" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Prestissimo.ino">
+      <FileType>CppCode</FileType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="address.h">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="adk.h">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="avrpins.h">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="BTD.h">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="BTHID.h">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="cdcacm.h">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="cdcftdi.h">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="cdcprolific.h">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="cdc_XR21B1411.h">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="confdescparser.h">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="controllerEnums.h">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="hexdump.h">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="hidboot.h">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="hidcomposite.h">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="hidescriptorparser.h">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="hiduniversal.h">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="hidusagestr.h">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="macros.h">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="masstorage.h">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="max3421e.h">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="max_LCD.h">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="MDD10A.h">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="message.h">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="parsetools.h">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="PololuMaestro.h">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="printhex.h">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="PS3BT.h">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="PS3Enums.h">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="PS3USB.h">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="PS4BT.h">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="PS4Parser.h">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="PS4USB.h">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="PSBuzz.h">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="settings.h">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="sink_parser.h">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="SPP.h">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="Usb.h">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="UsbCore.h">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="usbhid.h">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="usbhost.h">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="usbhub.h">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="usbh_midi.h">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="usb_ch9.h">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="version_helper.h">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="Wii.h">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="xboxEnums.h">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="XBOXOLD.h">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="XBOXONE.h">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="XBOXRECV.h">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="XBOXUSB.h">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="__vm\.Prestissimo.vsarduino.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="adk.cpp" />
+    <ClCompile Include="BTD.cpp" />
+    <ClCompile Include="BTHID.cpp" />
+    <ClCompile Include="cdcacm.cpp" />
+    <ClCompile Include="cdcftdi.cpp" />
+    <ClCompile Include="cdcprolific.cpp" />
+    <ClCompile Include="cdc_XR21B1411.cpp" />
+    <ClCompile Include="hidboot.cpp" />
+    <ClCompile Include="hidcomposite.cpp" />
+    <ClCompile Include="hidescriptorparser.cpp" />
+    <ClCompile Include="hiduniversal.cpp" />
+    <ClCompile Include="hidusagetitlearrays.cpp" />
+    <ClCompile Include="masstorage.cpp" />
+    <ClCompile Include="max_LCD.cpp" />
+    <ClCompile Include="MDD10A.cpp" />
+    <ClCompile Include="message.cpp" />
+    <ClCompile Include="parsetools.cpp" />
+    <ClCompile Include="PololuMaestro.cpp" />
+    <ClCompile Include="PS3BT.cpp" />
+    <ClCompile Include="PS3USB.cpp" />
+    <ClCompile Include="PS4Parser.cpp" />
+    <ClCompile Include="PSBuzz.cpp" />
+    <ClCompile Include="SPP.cpp" />
+    <ClCompile Include="Usb.cpp" />
+    <ClCompile Include="usbhid.cpp" />
+    <ClCompile Include="usbhub.cpp" />
+    <ClCompile Include="usbh_midi.cpp" />
+    <ClCompile Include="Wii.cpp" />
+    <ClCompile Include="XBOXOLD.cpp" />
+    <ClCompile Include="XBOXONE.cpp" />
+    <ClCompile Include="XBOXRECV.cpp" />
+    <ClCompile Include="XBOXUSB.cpp" />
+  </ItemGroup>
+  <PropertyGroup>
+    <DebuggerFlavor>VisualMicroDebugger</DebuggerFlavor>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
