@@ -34,6 +34,10 @@ void setup() {
 	maestro.setSpeed(1, 0);
 	maestro.setTarget(1, 1500 * 4);
 
+	maestro.setAcceleration(2, 10);
+	maestro.setSpeed(2, 0);
+	maestro.setTarget(2, 1500 * 4);
+
 }
 
 int loopcnt = 0;
@@ -50,6 +54,7 @@ void loop()
 	float RollerSpeed = 0;
 	float ChainbarX = 0;
 	float ChainbarY = 0;
+	float ChainbarHat = 0;
 	bool AtanMode = false;
 
 
@@ -122,6 +127,7 @@ void loop()
 
 	ChainbarX = servoNeut;
 	ChainbarY = servoNeut;
+	ChainbarHat = servoNeut;
 
 	if (Xbox.getButtonClick(Y, curController))
 	{
@@ -151,6 +157,19 @@ void loop()
 		}
 		else if (Xbox.getButtonPress(L2, curController) > 10) {
 			ChainbarX = map(Xbox.getButtonPress(L2, curController), 10, 255, servoNeut, servoMin);
+		}
+
+		if (Xbox.getButtonPress(R1, curController))
+		{
+			ChainbarHat = servoMax;
+		}
+		else if (Xbox.getButtonPress(L1, curController))
+		{
+			ChainbarHat = servoMin;
+		}
+		else
+		{
+			ChainbarHat = servoNeut;
 		}
 	}
 	else
@@ -188,6 +207,7 @@ void loop()
 		// 500 - 2500
 		maestro.setTarget(1, ChainbarY);
 		maestro.setTarget(0, ChainbarX);
+		maestro.setTarget(2, ChainbarHat);
 	}
 
 	delay(1);
